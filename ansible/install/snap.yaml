@@ -1,0 +1,26 @@
+- name: install snaps
+  hosts: localhost
+  become: true
+
+  tasks:
+  - name: install vscode
+    snap:
+      name: code
+      classic: yes
+      state: present
+
+  - name: install discord
+    snap:
+      name: discord
+      state: present
+  
+  - name: install spotify
+    snap:
+      name: spotify
+      state: present
+
+  - name: install alacritty
+    snap:
+      name: alacritty
+      classic: yes
+      state: present
