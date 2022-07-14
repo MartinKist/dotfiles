@@ -1,0 +1,7 @@
+# install
+- import_playbook: ansible/install/apt.yaml
+- import_playbook: ansible/install/snap.yaml
+
+# configure
+- import_playbook: ansible/configure/git.yaml
+- import_playbook: ansible/configure/config_files.yaml
