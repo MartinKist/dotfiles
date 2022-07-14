@@ -1,0 +1,31 @@
+- name: configure git
+  hosts: localhost
+
+  tasks:
+  - name: set username
+    git_config:
+      name: user.name
+      scope: global
+      value: "{{ git.user }}"
+      state: present
+
+  - name: set email
+    git_config:
+      name: user.email
+      scope: global
+      value: "{{ git.email }}"
+      state: present
+
+  - name: set default editor
+    git_config:
+      name: core.editor
+      scope: global
+      value: "{{ git.editor }}"
+      state: present
+
+  - name: set default branch name
+    git_config:
+      name: init.defaultBranch
+      scope: global
+      value: "{{ git.default_branch_name }}"
+      state: present

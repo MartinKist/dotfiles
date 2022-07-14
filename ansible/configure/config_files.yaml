@@ -1,0 +1,16 @@
+- name: link config files
+  hosts: localhost
+
+  tasks:
+  - name: configure bash
+    file:
+      src: "{{ playbook_dir }}/../../bash/bashrc"
+      dest: ~/.bashrc
+      state: link
+
+  - name: configure python
+    file:
+      src: "{{ playbook_dir }}/../../python/pythonrc"
+      dest: ~/.pythonrc
+      state: link
+  
