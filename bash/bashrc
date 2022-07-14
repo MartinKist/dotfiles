@@ -115,4 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-alias getdns='nmcli device show wlp59s0 | grep IP4.DNS'
+
+alias getdns='nmcli | grep DNS -A 7'
+alias python='python3'
