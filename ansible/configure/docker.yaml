@@ -1,0 +1,14 @@
+- name: configure docker
+  hosts: localhost
+  become: yes
+  
+  tasks:
+    - name: make sure docker group exists
+      group:
+        name: docker
+        state: present
+
+    - name: add user to docker group
+      user:
+        name: "{{ user.name }}"
+        groups: docker

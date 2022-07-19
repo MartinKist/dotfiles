@@ -1,0 +1,41 @@
+- name: install docker
+  hosts: localhost
+  become: true
+
+  tasks:
+  - name: uninstall old versions
+    apt:
+      name:
+        - docker
+        - docker-engine
+        - docker.io
+        - containerd
+        - runc
+      state: absent
+    
+  - name: install prerequisites
+    apt:
+      name:
+        - ca-certificates
+        - curl
+        - gnupg
+        - lsb-release
+      state: present
+  
+  - name: add dockers gpg key
+    apt_key:
+      url: https://download.docker.com/linux/ubuntu/gpg
+      keyring: /etc/apt/keyrings/docker.gpg
+
+  - name: set up dockers apt repository
+    template:
+      src: "{{ playbook_dir }}/templates/docker.j2"
+      dest: /etc/apt/sources.list.d/docker.list
+  
+  - name: install docker engine
+    apt:
+      name:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-compose-plugin
