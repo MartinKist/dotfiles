@@ -1,0 +1,55 @@
+{
+    "python.pythonPath": "C:\\Program Files (x86)\\Python38-32\\python.exe",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "git.postCommitCommand": "push",
+    "window.restoreWindows": "none",
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "discord.enabled": false,
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.notebookFileRoot": "C:\\Users\\Martin\\Documents\\CodeSpace",
+    "jupyter.askForKernelRestart": false,
+    "workbench.colorTheme": "Darcula Pycharm with Dark GUI",
+    "editor.tokenColorCustomizations": {
+    
+    },
+    "settingsSync.ignoredExtensions": [
+        "ms-toolsai.jupyter",
+        "ms-vscode.cpptools",
+        "magicstack.magicpython",
+        "ms-python.vscode-pylance",
+        "tht13.python"
+    ],
+    "files.autoSaveDelay": 250,
+    "files.autoSave": "onFocusChange",
+    "redhat.telemetry.enabled": false,
+    "[ansible]": {
+        "editor.detectIndentation": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.quickSuggestions": {
+            "comments": true,
+            "other": true,
+            "strings": true
+        }
+    },
+    "telemetry.telemetryLevel": "off",
+    "files.associations": {
+        "*.yml": "ansible",
+        "*.j2": "ansible-jinja"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "remote.SSH.remotePlatform": {
+        "192.168.178.155": "linux",
+        "192.168.178.160": "linux"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "window.zoomLevel": 1
+}
