@@ -1,0 +1,18 @@
+- name: configure vscode
+  hosts: localhost
+
+  tasks:
+  - name: link settings.json
+    file:
+      src: "{{ playbook_dir }}/../../vscode/settings.json"
+      dest: ~/.config/Code/User/settings.json
+      state: link
+      force: yes
+  
+  - name: install extensions
+    shell: 
+      argv:
+        - code
+        - --install-extension
+        - "{{ item }}"
+    loop: "{{ vscode.extensions }}"

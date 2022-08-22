@@ -7,10 +7,11 @@
       src: "{{ playbook_dir }}/../../bash/bashrc"
       dest: ~/.bashrc
       state: link
+      force: yes
 
   - name: configure python
     file:
       src: "{{ playbook_dir }}/../../python/pythonrc"
       dest: ~/.pythonrc
       state: link
-  
+      force: yes

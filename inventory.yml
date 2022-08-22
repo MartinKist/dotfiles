@@ -1,0 +1,17 @@
+all:
+  vars:
+    git:
+      user: MartinKist
+      email: martin.kistler@live.de
+      editor: vim
+      default_branch_name: main
+    vscode:
+      extensions:
+        - redhat.ansible
+        - garytyler.darcula-pycharm
+        - ms-vscode-remote.remote-containers
+        - ms-vscode-remote.remote-ssh
+        - ms-vscode-remote.remote-ssh-edit
+        - tomoki1207.pdf
+        - redhat.vscode-yaml
+        - jsaulou.theme-by-language

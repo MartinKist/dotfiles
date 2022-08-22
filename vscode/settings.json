@@ -16,7 +16,6 @@
     "jupyter.sendSelectionToInteractiveWindow": true,
     "jupyter.notebookFileRoot": "C:\\Users\\Martin\\Documents\\CodeSpace",
     "jupyter.askForKernelRestart": false,
-    "workbench.colorTheme": "Darcula Pycharm with Dark GUI",
     "editor.tokenColorCustomizations": {
     
     },
@@ -51,5 +50,8 @@
         "192.168.178.160": "linux"
     },
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "theme-by-language.themes": {
+        "*": "Default Dark+"
+    }
 }
